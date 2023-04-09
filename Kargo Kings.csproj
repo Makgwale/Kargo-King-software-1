@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC46A972-4401-4B24-B513-823EB6AFE6D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Orange_Design_Login</RootNamespace>
+    <AssemblyName>Orange Design Login</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPage.Designer.cs">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVehicle.Designer.cs">
+      <DependentUpon>AddVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentReport.Designer.cs">
+      <DependentUpon>AppointmentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClientRegistrationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientRegistrationPage.Designer.cs">
+      <DependentUpon>ClientRegistrationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletedServicesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompletedServicesReport.Designer.cs">
+      <DependentUpon>CompletedServicesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletedTripsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompletedTripsPage.Designer.cs">
+      <DependentUpon>CompletedTripsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletedTripsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompletedTripsReport.Designer.cs">
+      <DependentUpon>CompletedTripsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetails.Designer.cs">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeHomePage.Designer.cs">
+      <DependentUpon>EmployeeHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeLogin.Designer.cs">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientLoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientLoginPage.Designer.cs">
+      <DependentUpon>ClientLoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPage.Designer.cs">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineOrders.Designer.cs">
+      <DependentUpon>OnlineOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderHistory.Designer.cs">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LiveOrderPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LiveOrderPage.Designer.cs">
+      <DependentUpon>LiveOrderPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderPage.Designer.cs">
+      <DependentUpon>OrderPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OurHelpCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OurHelpCenter.designer.cs">
+      <DependentUpon>OurHelpCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentPage.Designer.cs">
+      <DependentUpon>PaymentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequirementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequirementReport.Designer.cs">
+      <DependentUpon>RequirementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleTrip.Designer.cs">
+      <DependentUpon>ScheduleTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequirements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceRequirements.Designer.cs">
+      <DependentUpon>ServiceRequirements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceStatus.Designer.cs">
+      <DependentUpon>ServiceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusReportPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusReportPage.Designer.cs">
+      <DependentUpon>StatusReportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timesheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timesheet.Designer.cs">
+      <DependentUpon>Timesheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimesheetReport.Designer.cs">
+      <DependentUpon>TimesheetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleServiceAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleServiceAppointment.Designer.cs">
+      <DependentUpon>VehicleServiceAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklyPlannedTrips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeeklyPlannedTrips.Designer.cs">
+      <DependentUpon>WeeklyPlannedTrips.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountPage.resx">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVehicle.resx">
+      <DependentUpon>AddVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentReport.resx">
+      <DependentUpon>AppointmentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientRegistrationPage.resx">
+      <DependentUpon>ClientRegistrationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletedServicesReport.resx">
+      <DependentUpon>CompletedServicesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletedTripsPage.resx">
+      <DependentUpon>CompletedTripsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompletedTripsReport.resx">
+      <DependentUpon>CompletedTripsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDetails.resx">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeHomePage.resx">
+      <DependentUpon>EmployeeHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLogin.resx">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientLoginPage.resx">
+      <DependentUpon>ClientLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPage.resx">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineOrders.resx">
+      <DependentUpon>OnlineOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderHistory.resx">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LiveOrderPage.resx">
+      <DependentUpon>LiveOrderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderPage.resx">
+      <DependentUpon>OrderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OurHelpCenter.resx">
+      <DependentUpon>OurHelpCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentPage.resx">
+      <DependentUpon>PaymentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RequirementReport.resx">
+      <DependentUpon>RequirementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleTrip.resx">
+      <DependentUpon>ScheduleTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceRequirements.resx">
+      <DependentUpon>ServiceRequirements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceStatus.resx">
+      <DependentUpon>ServiceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusReportPage.resx">
+      <DependentUpon>StatusReportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timesheet.resx">
+      <DependentUpon>Timesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimesheetReport.resx">
+      <DependentUpon>TimesheetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleServiceAppointment.resx">
+      <DependentUpon>VehicleServiceAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeeklyPlannedTrips.resx">
+      <DependentUpon>WeeklyPlannedTrips.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgtxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyhole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KK Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\General icon.jpg" />
+    <None Include="Resources\Manage account icon1.jpg" />
+    <None Include="Resources\General icon1.jpg" />
+    <Content Include="Resources\Manage account icon.jpg" />
+    <Content Include="Resources\payment icon.png" />
+    <None Include="Resources\payment icon1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
